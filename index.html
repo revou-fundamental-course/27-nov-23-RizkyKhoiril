@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator-box container">
+      <div class="calculator" id="luassegitiga">
+        <h2>Luas Segitiga</h2>
+        <img src="asset/segitiga.jpg" width="100" height="100" alt="" />
+        <p>Rumus Luas Segitiga yaitu :</p>
+        <p><strong>L = 1/2 x a x t</strong></p>
+        <p>Di mana :<br />L = Luas<br />a = Panjang Alas<br />t = Tinggi</p>
+        <label for="luas">Luas:</label>
+        <input type="number" id="luas" placeholder="Enter luas" />
+        <label for="tinggi">Tinggi:</label>
+        <input type="number" id="tinggi" placeholder="Enter tinggi" />
+        <button onclick="calculateArea()">Hitung</button>
+        <button class="reset" onclick="resetArea()">Reset</button>
+        <h3>Hasil:</h3>
+        <p id="resultArea"></p>
+      </div>
+      <!-- garis pisah -->
+      <div class="calculator" id="Kelilingsegitiga">
+        <h2>Keliling Segitiga</h2>
+        <img src="asset/segitiga (1).jpg" width="100" height="100" alt="" />
+        <p class="text-left">Rumus Keliling Segitiga yaitu :</p>
+        <p><strong>K = S1 + S2 + S3</strong></p>
+        <p class="text-left">
+          Di mana :<br />K = Keliling<br />S1 = Sisi A<br />S2 = Sisi B<br />S3
+          = Sisi C
+        </p>
+        <label for="sisiA">Sisi A:</label>
+        <input type="number" id="sisiA" placeholder="Enter sisi A" />
+        <label for="sisiB">Sisi B:</label>
+        <input type="number" id="sisiB" placeholder="Enter sisi B" />
+        <label for="sisiC">Sisi C:</label>
+        <input type="number" id="sisiC" placeholder="Enter sisi C" />
+        <button onclick="calculatePerimeter()">Hitung</button>
+        <button class="reset" onclick="resetPerimeter()">Reset</button>
+        <h3>Hasil:</h3>
+        <p id="resultPerimeter"></p>
+      </div>
+    </div>
+    <script src="js/kode.js"></script>
+  </body>
+</html>
